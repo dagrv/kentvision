@@ -6,7 +6,7 @@ import { ConvexClientProvider } from "@/providers/convex-client-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "KentVisionX",
+	title: "KentVision",
 	description: "Collaborative Platform",
 };
 
