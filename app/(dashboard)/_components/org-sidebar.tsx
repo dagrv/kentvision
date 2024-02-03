@@ -44,25 +44,18 @@ export const OrgSidebar = () => {
                 }} />
 
             <div className="space-y-1 w-full">
-                <Button asChild size="lg" className="font-normal justify-start px-2 w-full bg-red-100 text-red-800">
+                <Button asChild size="lg" className="font-normal justify-start px-2 w-full">
                     <Link href="/">
-                        <LayoutDashboard className="h-4 w-4 mr-2 text-red-600" />All Boards
+                        <LayoutDashboard className="h-4 w-4 mr-2 text-blue-300" />All Boards
                     </Link>
                 </Button>
 
-                <Button asChild size="lg" className="font-normal justify-start px-2 w-full bg-yellow-100 text-yellow-800">
+                <Button asChild size="lg" className="font-normal justify-start px-2 w-full">
                     <Link href={{ pathname: "/", query: { favorites: true }}}>
-                        <Star className="h-4 w-4 mr-2 text-yellow-800" />Favorites
-                    </Link>
-                </Button>
-
-                <Button asChild size="lg" className="font-normal justify-start px-2 w-full bg-green-100 text-green-800">
-                    <Link href={{ pathname: "/", query: { favorites: true }}}>
-                        <Star className="h-4 w-4 mr-2 text-green-800" />Created
+                        <Star className="h-4 w-4 mr-2 text-yellow-300" />Favorites
                     </Link>
                 </Button>
             </div>
-
         </div>
     )
 }

@@ -40,7 +40,6 @@ export const Navbar = () => {
                 <InviteButton />
             )}
 
-            <InviteButton />
             <UserButton />
         </div>
     )
