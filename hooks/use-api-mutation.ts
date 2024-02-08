@@ -19,6 +19,7 @@ export const useApiMutation = (mutationFunction: any) => {
     };
 
     return {
-        mutate, pending
-    }
+        mutate,
+        pending
+    };
 };

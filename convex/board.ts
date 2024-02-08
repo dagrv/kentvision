@@ -1,6 +1,6 @@
-import {v} from "convex/values";
+import { v } from "convex/values";
 
-import {mutation} from "./_generated/server";
+import { mutation } from "./_generated/server";
 
 const images = [
     "/placeholders/1.svg",
@@ -38,5 +38,5 @@ export const create = mutation({
         });
 
         return board;
-    }
-})
+    },
+});
