@@ -5,9 +5,10 @@ import Image from "next/image";
 import { useAuth } from "@clerk/nextjs";
 import { formatDistanceToNow } from "date-fns";
 
+import { Skeleton } from "@/components/ui/skeleton";
+
 import { Footer } from "./footer";
 import { Overlay } from './overlay';
-
 
 interface BoardCardProps {
     id: string;
@@ -38,21 +39,34 @@ export const BoardCard = ({
 
     return (
         <Link href={`/board/${id}`}>
-            <div className="group aspect-[100/127] rounded-lg flex flex-col justify-between overflow-hidden">
-                <div className="relative flex-1 bg-white">
-                    <Image src={imageUrl} alt={title} fill className="object-fit p-2 border-teal-500 hover:border-teal-500 border-3 rounded-lg" />
+            <div className="group aspect-[100/127] border rounded-lg flex flex-col justify-between overflow-hidden">
+                <div className="relative flex-1 bg-teal-50">
+                <Image
+                    src={imageUrl}
+                    alt={title}
+                    fill
+                    className="object-fit"
+                />
                     <Overlay />
                 </div>
                 
                 <Footer
-                        isFavorite={isFavorite} 
-                        title={title}
-                        authorLabel={authorLabel}
-                        createdAtLabel={createdAtLabel}
-                        onClick={() => {}}
-                        disabled={false} 
-                    />
+                    isFavorite={isFavorite}
+                    title={title}
+                    authorLabel={authorLabel}
+                    createdAtLabel={createdAtLabel}
+                    onClick={() => {}}
+                    disabled={false}
+            />
             </div>
         </Link>
-    )
-}
+    );
+};
+
+BoardCard.Skeleton = function BoardCardSkeleton() {
+    return (
+        <div className="aspect-[100/127] rounded-lg overflow-hidden">
+            <Skeleton className="h-full w-full" />
+        </div>
+    );
+};

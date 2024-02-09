@@ -28,6 +28,7 @@ export const Footer = ({
                 {authorLabel}, {createdAtLabel}
             </p>
 
+            {/* Favorite Icon */}
             <button
                 disabled={disabled}
                 onClick={onClick}
@@ -40,7 +41,6 @@ export const Footer = ({
                     "h-4 w-4",
                     isFavorite && "fill-yellow-500 text-yellow-500"
                 )} />
-
             </button>
         </div>
     );
