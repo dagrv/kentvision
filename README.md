@@ -14,4 +14,5 @@ Tech Stack :
 - TailwindCSS
 - Clerk
 - Convex
+- Liveblocks
 - etc...

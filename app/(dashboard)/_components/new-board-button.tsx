@@ -43,9 +43,9 @@ export const NewBoardButton = ({
             }>
             <div />
 
-            <Plus className="h-12 w-12 text-white" />
+            <Plus className="h-16 w-16 text-white" />
 
-            <p className="text-md text-white font-medium">
+            <p className="text-md mt-4 text-white font-medium">
                 New Board
             </p>
         </button>
