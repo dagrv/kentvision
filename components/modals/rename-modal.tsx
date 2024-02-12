@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 import { useApiMutation } from "@/hooks/use-api-mutation";
 import { api } from "@/convex/_generated/api";
 
-
 export const RenameModal = () => {
     const {
         mutate, 
