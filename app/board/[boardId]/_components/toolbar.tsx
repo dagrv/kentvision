@@ -88,12 +88,10 @@ export const Toolbar = ({
                     label="Pencil"
                     icon={Pencil}
                     onClick={() => setCanvasState({ 
-                        mode: CanvasMode.Inserting,
-                        layerType: LayerType.Pen
+                        mode: CanvasMode.Pencil,
                     })}
                     isActive={
-                        canvasState.mode === CanvasMode.Inserting &&
-                        canvasState.layerType === LayerType.Pen
+                        canvasState.mode === CanvasMode.Pencil
                     }
                 />
             </div>
